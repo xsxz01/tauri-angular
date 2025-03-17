@@ -1,18 +1,18 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "tauri-vnt",
+  "productName": "tauri-angular",
   "version": "0.1.0",
-  "identifier": "com.tauri-vnt.app",
+  "identifier": "com.tauri-angular.app",
   "build": {
     "beforeDevCommand": "pnpm start",
     "devUrl": "http://localhost:1420",
     "beforeBuildCommand": "pnpm build",
-    "frontendDist": "../dist/tauri-vnt/browser"
+    "frontendDist": "../dist/tauri-angular/browser"
   },
   "app": {
     "windows": [
       {
-        "title": "tauri-vnt",
+        "title": "tauri-angular",
         "width": 800,
         "height": 600
       }
