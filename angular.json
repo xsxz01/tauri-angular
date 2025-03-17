@@ -18,9 +18,19 @@
             "outputPath": "dist/tauri-angular",
             "index": "src/index.html",
             "browser": "src/main.ts",
-            "polyfills": ["zone.js"],
+            "polyfills": [
+              "zone.js",
+              "@angular/localize/init"
+            ],
             "tsConfig": "tsconfig.app.json",
-            "assets": ["src/assets"]
+            "assets": [
+              "src/assets"
+            ],
+            "styles": [
+              "src/style.css",
+              "@angular/material/prebuilt-themes/azure-blue.css",
+              "bootstrap/dist/css/bootstrap.min.css"
+            ]
           },
           "configurations": {
             "production": {
