@@ -3,7 +3,7 @@ import { invoke } from "@tauri-apps/api/core";
 
 @Component({
     selector: 'app-root',
-    standalone: false,
+    standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css'
 })

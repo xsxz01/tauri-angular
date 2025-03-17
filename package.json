@@ -1,12 +1,11 @@
 {
-  "name": "tauri-vnt",
+  "name": "tauri-angular",
   "version": "0.1.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "tw:init": "tailwindcss init -p",
     "tauri": "tauri"
   },
   "private": true,
@@ -37,12 +36,13 @@
     "zone.js": "~0.15.0"
   },
   "devDependencies": {
-    "@angular/build": "^19.2.3",
+    "@angular-devkit/build-angular": "^19.2.3",
     "@angular/cli": "^19.2.3",
     "@angular/compiler-cli": "^19.2.2",
     "@angular/localize": "^19.2.2",
     "@tauri-apps/cli": "^2",
     "@types/jasmine": "~5.1.0",
+    "@types/node": "^22.13.10",
     "autoprefixer": "^10.4.21",
     "jasmine-core": "~5.6.0",
     "karma": "~6.4.0",
@@ -50,8 +50,6 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "postcss": "^8.5.3",
-    "tailwindcss": "^3.4.17",
-    "typescript": "~5.8.2"
+    "typescript": "~5.7.2"
   }
 }

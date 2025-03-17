@@ -5,7 +5,7 @@
   "identifier": "com.tauri-angular.app",
   "build": {
     "beforeDevCommand": "pnpm start",
-    "devUrl": "http://localhost:1420",
+    "devUrl": "http://localhost:4200",
     "beforeBuildCommand": "pnpm build",
     "frontendDist": "../dist/tauri-angular/browser"
   },
