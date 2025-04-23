@@ -7,9 +7,12 @@ import * as heroiconsOutline from '@ng-icons/heroicons/outline';
 import * as heroiconsSolid from '@ng-icons/heroicons/solid';
 // 导入路由
 import { routes } from './app.routes';
+// 导入动画
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 export const appConfig: ApplicationConfig = {
   providers: [
+    provideAnimationsAsync(),
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes),
     importProvidersFrom(
