@@ -1,0 +1,30 @@
+<div class="windows-title-container" data-tauri-drag-region>
+    <!-- 左侧标题和图标 -->
+    <div class="titlebar-content">
+        <img src="/favicon.ico" class="w-5 h-5 dark:invert-[.85]" alt="App Logo">
+        <span class="app-title">Tauri Angular App</span>
+    </div>
+
+    <!-- 窗口控制按钮组 -->
+    <div class="flex">
+        <!-- 最小化按钮 -->
+        <button class="window-btn control-btn" (click)="windowService.minimize()">
+            <ng-icon name="bootstrapDash" class="w-4 h-4" />
+        </button>
+
+        <!-- 最大化/还原按钮 -->
+        <button class="window-btn control-btn" (click)="handleMaximize()">
+            @if (isMaximized) {
+            <ng-icon name="bootstrapStop" class="w-3 h-3" />
+            } @else {
+            <ng-icon name="bootstrapSquare" class="w-3 h-3" />
+            }
+        </button>
+
+        <!-- 关闭按钮 -->
+        <button class="window-btn close-btn" (click)="windowService.close()">
+            <ng-icon name="bootstrapX" class="w-4 h-4" />
+        </button>
+    </div>
+
+</div>

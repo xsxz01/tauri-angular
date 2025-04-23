@@ -1,0 +1,32 @@
+@import '../../../../style.css';
+
+.windows-title-container {
+  @apply h-8 bg-transparent flex justify-end fixed top-0 left-0 right-0;
+  user-select: none;
+  -webkit-app-region: drag;
+}
+
+.window-btn {
+  @apply w-12 h-8 flex items-center justify-center transition-colors duration-200;
+  -webkit-app-region: no-drag;
+}
+
+.close-btn:hover {
+  @apply bg-red-500 text-white;
+}
+
+.control-btn:hover {
+  @apply bg-gray-200/30 dark:bg-gray-500/30;
+}
+
+/* 添加标题样式 */
+.app-title {
+  @apply text-sm ml-2 text-[#333333] dark:text-[#F3F3F3] truncate;
+  font-family: 'Segoe UI', system-ui;
+}
+
+/* 调整布局容器 */
+.titlebar-content {
+  @apply flex-1 flex items-center pl-2;
+  -webkit-app-region: drag;
+}

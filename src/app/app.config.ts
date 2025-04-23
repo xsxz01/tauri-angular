@@ -9,6 +9,7 @@ import * as heroiconsSolid from '@ng-icons/heroicons/solid';
 import { routes } from './app.routes';
 // 导入动画
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { MainWindowService } from './core/service/main-window.service';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -21,6 +22,8 @@ export const appConfig: ApplicationConfig = {
         ...heroiconsOutline,
         ...heroiconsSolid,
       }),
-    )
+    ),
+    // 主窗口服务
+    MainWindowService
   ]
 };

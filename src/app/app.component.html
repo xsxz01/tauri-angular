@@ -1,4 +1,8 @@
 <main class="container">
+  <!--自定义标题栏-->
+  @if (this.mainWindowService.isCustomTitleBar()) {
+    <app-windows-title />
+  }
   <h1 class="text-3xl font-bold underline">
     Welcome to Tauri + Angular + tailwind!
   </h1>
