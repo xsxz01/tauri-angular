@@ -1,5 +1,5 @@
 import { Injectable, signal } from '@angular/core';
-import { Effect, getCurrentWindow, type PhysicalPosition, type PhysicalSize } from '@tauri-apps/api/window';
+import { Effect, EffectState, getCurrentWindow, type PhysicalPosition, type PhysicalSize } from '@tauri-apps/api/window';
 
 @Injectable({
     providedIn: 'root'
@@ -93,7 +93,8 @@ export class MainWindowService {
                     break; 
             }
             await this.appWindow.setEffects({
-                effects
+                effects,
+                state: EffectState.Active,
             })
         } catch (error) {
             console.error('Set windows effect failed:', error);
