@@ -1,5 +1,5 @@
 import { Injectable, signal } from '@angular/core';
-import { getCurrentWindow, type PhysicalPosition, type PhysicalSize } from '@tauri-apps/api/window';
+import { Effect, getCurrentWindow, type PhysicalPosition, type PhysicalSize } from '@tauri-apps/api/window';
 
 @Injectable({
     providedIn: 'root'
@@ -72,6 +72,31 @@ export class MainWindowService {
             await this.appWindow.setTitle(title);
         } catch (error) {
             console.error('Set window title failed:', error);
+        }
+    }
+
+    // 设置windows 11 窗口效果
+    async setWindowsEffect(effect: 'mica' | 'blur' | 'acrylic' | 'none') {
+        try {
+            const effects: Effect[] = [];
+            switch (effect) {
+                case 'mica':
+                    effects.push(Effect.Mica);
+                    break;
+                case 'blur':
+                    effects.push(Effect.Blur);
+                    break;
+                case 'acrylic':
+                    effects.push(Effect.Acrylic);
+                    break;
+                case 'none':
+                    break; 
+            }
+            await this.appWindow.setEffects({
+                effects
+            })
+        } catch (error) {
+            console.error('Set windows effect failed:', error);
         }
     }
 }

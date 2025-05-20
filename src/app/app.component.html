@@ -28,6 +28,15 @@
   @if (greetingMessage) {
   <p class="row">{{ greetingMessage }}</p>
   }
+  <!--add a row to select windows effect-->
+  <div class="row">
+    <select #effectSelect (change)="handleSelectEffect(effectSelect.value)">
+      <option value="none">None</option>
+      <option value="acrylic">Acrylic</option>
+      <option value="mica">Mica</option>
+      <option value="blur">blur</option>
+    </select>
+  </div>
 </main>
 
 <router-outlet />
