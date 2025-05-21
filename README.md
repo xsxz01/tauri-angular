@@ -1,6 +1,6 @@
-# 🖥 Tauri + Angular 桌面应用
+![应用截图](./doc/screenshot.png#pic_center)
 
-![应用截图](./doc/screenshot.png#pic_center) <!-- 请替换为实际截图 -->
+# 🖥 Tauri + Angular 桌面应用
 
 基于现代Web技术的跨平台桌面应用开发模板，整合以下技术栈：
 - 🚀 **Tauri** - 构建轻量级高性能桌面应用
