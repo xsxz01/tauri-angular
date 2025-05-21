@@ -29,12 +29,19 @@
   <p class="row">{{ greetingMessage }}</p>
   }
   <!--add a row to select windows effect-->
-  <div class="row">
-    <select #effectSelect (change)="handleSelectEffect(effectSelect.value)">
-      <option value="none">None</option>
-      <option value="acrylic">Acrylic</option>
-      <option value="mica">Mica</option>
-      <option value="blur">blur</option>
+  <div class="max-w-[600px] px-4 mx-auto row items-center mt-3"> <!-- 添加 items-center -->
+    <label class="block mr-4 text-base font-semibold text-gray-700 transition-colors whitespace-nowrap"> <!-- 移除 mb-2 -->
+      窗口效果选择
+    </label>
+    <select 
+      #effectSelect 
+      (change)="handleSelectEffect(effectSelect.value)"
+      class="w-64 p-2 text-gray-700 truncate transition-all bg-white border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 hover:bg-gray-50"
+    >
+      <option value="none">无特效</option>
+      <option selected value="acrylic">亚克力效果</option>
+      <option value="mica">云母效果</option>
+      <option value="blur">模糊效果</option>
     </select>
   </div>
 </main>
