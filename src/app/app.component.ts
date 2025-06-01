@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { invoke } from "@tauri-apps/api/core";
-
+import { CommonModule } from '@angular/common';
 import { NgIconsModule } from '@ng-icons/core';
 import { MainWindowService } from './core/service/main-window.service';
 import { WindowsTitleComponent } from './components/title-bar/windows-title/windows-title.component';
