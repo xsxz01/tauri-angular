@@ -10,22 +10,22 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^20.0.1",
+    "@angular/animations": "^20.0.3",
     "@angular/cdk": "20.0.2",
-    "@angular/common": "^20.0.1",
-    "@angular/compiler": "^20.0.1",
-    "@angular/core": "^20.0.1",
-    "@angular/forms": "^20.0.1",
+    "@angular/common": "^20.0.3",
+    "@angular/compiler": "^20.0.3",
+    "@angular/core": "^20.0.3",
+    "@angular/forms": "^20.0.3",
     "@angular/material": "20.0.2",
-    "@angular/platform-browser": "^20.0.1",
-    "@angular/platform-browser-dynamic": "^20.0.1",
-    "@angular/router": "^20.0.1",
+    "@angular/platform-browser": "^20.0.3",
+    "@angular/platform-browser-dynamic": "^20.0.3",
+    "@angular/router": "^20.0.3",
     "@ng-bootstrap/ng-bootstrap": "18.0.0",
     "@ng-icons/bootstrap-icons": "^31.4.0",
     "@ng-icons/core": "^31.4.0",
     "@ng-icons/heroicons": "^31.4.0",
     "@popperjs/core": "^2.11.8",
-    "@tailwindcss/postcss": "^4.1.8",
+    "@tailwindcss/postcss": "^4.1.10",
     "@tauri-apps/api": "^2.5.0",
     "@tauri-apps/plugin-opener": "^2.2.7",
     "bootstrap": "^5.3.6",
@@ -35,13 +35,13 @@
     "zone.js": "~0.15.1"
   },
   "devDependencies": {
-    "@angular/build": "^20.0.1",
-    "@angular/cli": "^20.0.1",
-    "@angular/compiler-cli": "^20.0.1",
-    "@angular/localize": "^20.0.1",
+    "@angular/build": "^20.0.2",
+    "@angular/cli": "^20.0.2",
+    "@angular/compiler-cli": "^20.0.3",
+    "@angular/localize": "^20.0.3",
     "@tauri-apps/cli": "^2.5.0",
     "@types/jasmine": "~5.1.8",
-    "@types/node": "^22.15.30",
+    "@types/node": "^22.15.31",
     "autoprefixer": "^10.4.21",
     "jasmine-core": "~5.6.0",
     "karma": "~6.4.4",
@@ -49,7 +49,7 @@
     "karma-coverage": "~2.2.1",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "postcss": "^8.5.4",
+    "postcss": "^8.5.5",
     "tailwindcss": "4.1.4",
     "typescript": "~5.8.3"
   },
@@ -62,5 +62,5 @@
       "msgpackr-extract"
     ]
   },
-  "packageManager": "pnpm@10.11.0+sha512.6540583f41cc5f628eb3d9773ecee802f4f9ef9923cc45b69890fb47991d4b092964694ec3a4f738a420c918a333062c8b925d312f42e4f0c263eb603551f977"
+  "packageManager": "pnpm@10.12.1+sha512.f0dda8580f0ee9481c5c79a1d927b9164f2c478e90992ad268bbb2465a736984391d6333d2c327913578b2804af33474ca554ba29c04a8b13060a717675ae3ac"
 }
