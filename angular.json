@@ -99,7 +99,8 @@
     }
   },
   "cli": {
-    "analytics": "79207d0f-38f0-4c6b-94a8-b64fd2fba690"
+    "analytics": "79207d0f-38f0-4c6b-94a8-b64fd2fba690",
+    "packageManager": "pnpm"
   },
   "schematics": {
     "@schematics/angular:component": {
