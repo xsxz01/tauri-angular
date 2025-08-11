@@ -40,3 +40,6 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# 屏蔽安卓分支的内容，本分支不需要安卓，纯web，如果需要则取消这条
+/src-tauri/gen
