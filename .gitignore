@@ -40,3 +40,6 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# 屏蔽安卓文件，如果你使用安卓的话建议直接用安卓的分支
+/src-tauri/gen
