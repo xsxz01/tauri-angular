@@ -41,5 +41,5 @@ testem.log
 .DS_Store
 Thumbs.db
 
-# 屏蔽安卓文件，如果你使用安卓的话建议直接用安卓的分支
+# 屏蔽安卓分支的内容，本分支不需要安卓，纯web，如果需要则取消这条
 /src-tauri/gen
